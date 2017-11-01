@@ -1,9 +1,11 @@
-window.matchMedia = window.matchMedia || function () {
+window.matchMedia =
+  window.matchMedia ||
+  function matchMedia() {
     return {
-        matches: false,
-        addListener: function () { },
-        removeListener: function () { }
+      matches: false,
+      addListener() {},
+      removeListener() {}
     };
-};
+  };
 
 global.fetch = require('jest-fetch-mock');

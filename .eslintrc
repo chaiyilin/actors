@@ -1,0 +1,67 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jest/globals": true
+  },
+  "extends": ["airbnb"],
+  "plugins": [
+    "jest"
+  ],
+  "globals": {
+    "fetch":true
+  },
+  "rules": {
+    "react/no-did-mount-set-state":"off",
+    "import/no-named-as-default": "off",
+    "max-len": [
+      "error",
+      120
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "arrow-parens": "off",
+    "no-param-reassign": "off",
+    "class-methods-use-this": "off",
+    "arrow-body-style": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "eol-last": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never"
+      }
+    ],
+    "react/prefer-stateless-function": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "import/newline-after-import": "off",
+
+    "function-paren-newline":"off"
+  }
+}
